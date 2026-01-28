@@ -21,5 +21,5 @@ flutter:
       android:
         package: com.lykhonis.imagecrop
         pluginClass: ImageCropPlugin
-      ios:
-        pluginClass: ImageCropPlugin
+      # ios:
+        # pluginClass: ImageCropPlugin
