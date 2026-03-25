@@ -1,6 +1,8 @@
 group 'com.lykhonis.imagecrop'
 version '1.0-SNAPSHOT'
 
+apply plugin: 'kotlin-android'
+
 buildscript {
     repositories {
         google()
@@ -33,6 +35,10 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17  // ← ADD
         targetCompatibility JavaVersion.VERSION_17  // ← ADD
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'  // ← ADD THIS
     }
 
     lintOptions {
